@@ -1,0 +1,55 @@
+{% extends "bases.html" %}
+
+{% block title %}Ligas de futbol{% endblock %}
+
+{% block header %}<h1 class="titulo">Ligas de futbol</h1>
+<div class="header-container" style="display: flex; justify-content: space-between; align-items: center;">
+    
+    <a href="/login" class="btn btn-primary" style="margin-left: 300%;">Iniciar Sesión</a>
+</div>
+{% endblock %}
+
+{% block content %}
+
+    <div class="league">
+        <a href="/laliga">
+            <img src="{{ url_for('static',path='IMG/laligaespañola.jpg') }}" alt="LaLiga Española"> 
+        </a>
+        <h2>LaLiga Española</h2>
+    </div>
+
+    <div class="league">
+        <a href="/premierleague">
+            <img src="{{ url_for('static',path='IMG/premierleaguee.jpg') }}" alt="Premier League">
+        </a>
+        <h2>Premier League</h2>
+    </div>
+    
+    <div class="league">
+        <a href="/bundesliga">
+            <img src="{{ url_for('static',path='IMG/bundesliga.jpg') }}" alt="Bundesliga">
+        </a>
+        <h2>Bundesliga</h2>
+    </div>
+
+    <div class="league">
+        <a href="/seriea">
+            <img src="{{ url_for('static',path='IMG/seriea.jpg') }}" alt="SerieA">
+        </a>
+        <h2>SerieA</h2>
+    </div>
+
+    <div class="league">
+        <a href="/mls">
+            <img src="{{ url_for('static',path='IMG/mls.jpg') }}" alt="MLS">
+        </a>
+        <h2>MLS</h2>
+    </div>
+
+    <div class="league">
+        <a href="/ligue1">
+            <img src="{{ url_for('static',path='IMG/ligue1.jpg') }}" alt="Ligue1">
+        </a>
+        <h2>Ligue1</h2>
+    </div>
+{% endblock %}

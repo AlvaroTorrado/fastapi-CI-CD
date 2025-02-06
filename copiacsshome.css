@@ -1,0 +1,59 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #141414;
+    background-color: #141414;
+    background-repeat: no-repeat; /* Evita la repetición de la imagen */
+    background-position: center center; /* Centra la imagen en la pantalla */
+    height: 100vh; /* Asegura que el body ocupe toda la altura de la ventana */
+    background-size: cover; /* Asegura que la imagen cubra todo el body sin distorsionarse */
+    overflow-x: hidden;
+}
+
+
+header {
+    
+    color: rgb(10, 10, 10);
+    text-align: center;
+    padding: 1rem;
+    background-image: url('../img/bannerbalon.jpg');
+    background-size: cover; /* Hace que la imagen cubra todo el header sin distorsionarse */
+    background-position: center center; /* Centra la imagen en el header */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    height: 100px; /* Ajusta la altura del header según sea necesario */
+    color: white; /* Asegura que el texto sea visible sobre la imagen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Centra el texto dentro del header */
+}
+
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.league img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.league h2 {
+    text-align: center;
+    margin-top: 0.5rem;
+    color: white;
+}
+
+footer {
+    text-align: center;
+    padding-top: 40px; /* Puedes ajustar esto según sea necesario */
+    background-color: #1d1616;
+    color: white;
+    margin-top: auto;
+    width: 100%;
+    padding-bottom: 40px; /* Agrega un poco de espacio al final */
+}

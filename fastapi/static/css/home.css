@@ -1,0 +1,76 @@
+header {
+    /*background: #c52e00; color del header */
+    color: #fff; /*color del texto del header */
+    padding: 1rem 0; 
+    text-align: center; 
+    background-image: url('../img/background.jpg'); /*imagen de fondo del header */
+    background-size: cover;
+    /*background-color: #1E8E3E;  Color de fondo del header */
+    text-align: center; 
+    padding: 1rem;
+    background-size: cover; /* Hace que la imagen cubra todo el header sin distorsionarse */
+    background-position: center center; /* Centra la imagen en el header */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    height: 50px; /* Ajusta la altura del header según sea necesario */
+    color: white; /* Asegura que el texto sea visible sobre la imagen */ 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    text-align: center; /* Centra el texto dentro del header */
+    
+}
+
+.titulo{
+    color:white;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: black; /* Color del texto de la página */
+    /* background-color: grey; Color de fondo de la página */
+    background-repeat: no-repeat; /* Evita la repetición de la imagen */
+    background-position: center center; /* Centra la imagen en la pantalla */
+    height: 100vh; /* Asegura que el body ocupe toda la altura de la ventana */
+    background-size: cover; /* Asegura que la imagen cubra todo el body sin distorsionarse */
+    overflow-x: hidden;
+} 
+.league {
+    display: flex; /* Usamos flexbox para alinear la imagen y el h2 en una fila */
+    align-items: center; /* Alinea la imagen y el h2 verticalmente */
+    justify-content: flex-start; /* Asegura que los elementos estén alineados a la izquierda */
+    margin-bottom: 20px; /* Añade algo de espacio entre cada conjunto de imagen y texto */
+}
+.league img {
+    width: 500px; /* Ajusta el tamaño de la imagen */
+    height: auto; /* Mantén la proporción de la imagen */
+    margin-right: 10px; /* Espacio entre la imagen y el h2 */
+}
+
+.league h2 {
+    margin: 100px; /* Elimina el margen por defecto */
+    color: black; /* Color del texto */
+    font-size: 1.5rem; /* Tamaño del texto */
+    line-height: 1; /* Evita el desalineado vertical */
+}
+
+footer {
+    text-align: center;
+    padding-top: 20px; /* Puedes ajustar esto según sea necesario */
+    background-color: #0f0f0f; /* Color de fondo del footer */
+    color: rgb(184, 40, 40); /* Color del texto del footer */
+    margin-top: auto;
+    width: 100%;
+    padding-bottom: 20px; /* Agrega un poco de espacio al final */
+    margin-top: 5%;
+}
+
+/* (main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    flex-grow: 1;
+    }) 
